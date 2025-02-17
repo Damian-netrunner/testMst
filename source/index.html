@@ -12,22 +12,24 @@
     <header class="header">
         <div class="container">
             <nav class="header__nav">
-                <div class="inner-wrapper">>
-                    <img class="header__logo" src="img/logo.svg" alt="Лого" width="150">
-                    <ul class="site-navigation">
-                        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Получить консультацию</a></li>
-                        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Посмотреть проекты</a></li>
-                        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
-                    </ul>
-                    <section class="promo">
-                        <p>Строительство домов: Мы строим дома любой сложности с учетом всех ваших пожеланий.</p>
-                        <p>Ремонт и отделка: Выполняем внутреннюю и внешнюю отделку, включая монтаж сантехники и электрики.</p>
-                        <p>Проектирование: Создаем проектную документацию с учетом всех современных стандартов и ваших индивидуальных требований.</p>
-                        <button class="btn">Начать проект</button>
-                    </section>
+                <div class="inner-wrapper">
+                    <div class="wrapper">
+                        <img class="header__logo" src="img/logo.svg" alt="logo" width="150">
+                        <ul class="site-navigation">
+                            <li class="site-navigation__item"><a class="site-navigation__link hover-underline" href="#">Get a consultation</a></li>
+                            <li class="site-navigation__item"><a class="site-navigation__link hover-underline" href="#">View projects</a></li>
+                            <li class="site-navigation__item"><a class="site-navigation__link hover-underline" href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="promo">
+                        <p>Construction of houses: We build houses of any complexity, taking into account all your wishes.</p>
+                        <p>Repair and finishing: We carry out interior and exterior finishing, including plumbing and electrical installation.</p>
+                        <p>Design: We create design documentation taking into account all modern standards and your individual requirements.</p>
+                        <a href="#" class="btn">Start a project</a>
+                    </div>
                 </div>
                 <div class="inner-wrapper">
-                    <img src="img/building.jpg" width="400"> 
+                    <img class="intro-pic" src="img/building.jpg" width="400"> 
                 </div>
             </nav>
         </div>
@@ -38,33 +40,80 @@
         <section class="advantages">
             <div class="container">
                 <div class="inner-wrapper">
-                    <img src="400" alt="">
+                    <img src="img/istockphoto-1.jpg" width="400">
                 </div>    
                 <div class="inner-wrapper">
-                    <h2>Почему выбирают нас?</h2>
-                    <ul class="advantages__list"></ul>
-                        <li class="advantages__item">Профессионализм: Каждый проект — это результат работы высококвалифицированных специалистов.</li>
-                        <li class="advantages__item">Гарантия: Мы предоставляем долгосрочные гарантии на все выполненные работы</li>
-                        <li class="advantages__item">Честные цены: Без скрытых платежей и дополнительных расходов.</li>
-                        <li class="advantages__item">Строим качественно и вовремя: Дома, офисы, ремонты — с нами ваши идеи становятся реальностью.</li>
-                    <a href="">Связаться с нами</a>
+                    <h2>Why choose us?</h2>
+                    <ul class="advantages__list" width="400"></ul>
+                        <li class="advantages__item">Professionalism: Each project is the result of the work of highly qualified specialists.</li>
+                        <li class="advantages__item">Warranty: We provide long-term guarantees on all work performed</li>
+                        <li class="advantages__item">Honest prices: No hidden fees or additional costs.</li>
+                        <li class="advantages__item">We build with quality and on time: Homes, offices, renovations - with us your ideas become reality.</li>
+                    <a href="">Contact us</a>
                 </div>    
                 <div class="inner-wrapper">
-                    <img src="400" alt="">
+                    <img src="img/istockphoto-2.jpg"  width="400">
                 </div>    
             </div>
-        </section>
+        
 
-        <div class="container">
-            <form class="form">
-                <h2 class="form__heading">Получить консультацию</h2>
-                <div class="form__block">
-                <label class="form__label" for="quantity-field">Количество</label>
-                <input class="form__input" type="text" value="1 человек" id="quantity-field">
+            <div class="container">
+                <form class="form">
+                    <h2 class="form__heading">Get a consultation</h2>
+                    <div class="form__block">
+                        <form action="" method="get" class="form-example">
+                            <div class="form-example">
+                                <label for="name">Name: </label>
+                                <input type="text" name="name" id="name" required />
+                        </div>
+                            <div class="form-example">
+                                <label for="email">Email: </label>
+                                <input type="email" name="email" id="email" required />
+                        </div>
+                            <div class="form-example">
+                                <input type="submit" value="Subscribe" class="btn submit-btn"/>
+                        </div>
+                      </form>
                 </div>
             </form>
-            </div>    
-
+        </div>    
+        </section>    
+    <footer>
+        <div class="container">
+            <ul class="footer__nav">
+                <li class="footer__nav"></li>
+                <li class="footer__nav"></li>
+                <li class="footer__nav"></li>
+            </ul>
+        </div>
+        <div class="container">
+            
+            <div class="inner-wrapper">
+                <img class="header__logo" src="img/logo.svg" alt="logo" width="150">
+                <p>© 2025, Copyright</p>
+            </div>
+            <div class="inner-wrapper">
+                <ul class="socials">
+                    <li class="socials__item">
+                        <img class="socials__pic" src="img/facebook.svg"  width="30">
+                    </li>
+                    <li class="socials__item">
+                        <img class="socials__pic" src="img/instagram.svg" width="30">
+                    </li>
+                    <li class="socials__item">
+                        <img class="socials__pic" src="img/telegram.svg"  width="30">
+                    </li>
+                    <li class="socials__item">
+                        <img class="socials__pic" src="img/youtube.svg"  width="30">
+                    </li>
+                </ul>
+            </div>
+            <div class="inner-wrapper">
+                <a href="#" class="btn">Order</a>
+                <a href="#"  class="link">Terms of use</a>
+            </div>
+        </div>        
+    </footer>        
 
 
     </main>
