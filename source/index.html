@@ -9,13 +9,13 @@
     <title>Lorem</title>
 </head>
 <body class="page">
-    <header class="header">
+    <header class="header" >
         <div class="container">
             <nav class="header__nav">
                 <div class="inner-wrapper">
-                    <div class="wrapper">
+                    <div class="wrapper" id="nav">
                         <img class="header__logo" src="img/logo.svg" alt="logo" width="150">
-                        <ul class="site-navigation">
+                        <ul class="site-navigation" >
                             <li class="site-navigation__item"><a class="site-navigation__link hover-underline" href="#">Get a consultation</a></li>
                             <li class="site-navigation__item"><a class="site-navigation__link hover-underline" href="#">View projects</a></li>
                             <li class="site-navigation__item"><a class="site-navigation__link hover-underline" href="#">Contacts</a></li>
@@ -40,50 +40,61 @@
         <section class="advantages">
             <div class="container">
                 <div class="inner-wrapper">
-                    <img src="img/istockphoto-1.jpg" width="400">
+                    <img class="advantages__pic" src="img/istockphoto-1.jpg" width="400">
                 </div>    
-                <div class="inner-wrapper">
+                <div class="inner-wrapper advantages__text">
                     <h2>Why choose us?</h2>
                     <ul class="advantages__list" width="400"></ul>
                         <li class="advantages__item">Professionalism: Each project is the result of the work of highly qualified specialists.</li>
                         <li class="advantages__item">Warranty: We provide long-term guarantees on all work performed</li>
                         <li class="advantages__item">Honest prices: No hidden fees or additional costs.</li>
                         <li class="advantages__item">We build with quality and on time: Homes, offices, renovations - with us your ideas become reality.</li>
-                    <a href="">Contact us</a>
+                    <a href="#" class="btn">Contact us</a>
                 </div>    
                 <div class="inner-wrapper">
-                    <img src="img/istockphoto-2.jpg"  width="400">
+                    <img class="advantages__pic" src="img/istockphoto-2.jpg"  width="400">
                 </div>    
             </div>
         
 
-            <div class="container">
+            <div class="container form-block">
                 <form class="form">
                     <h2 class="form__heading">Get a consultation</h2>
                     <div class="form__block">
                         <form action="" method="get" class="form-example">
-                            <div class="form-example">
-                                <label for="name">Name: </label>
+                            <div class="form__item">
+                                <label for="name"value="Name"></label>
+                                <div class="form__inner">
                                 <input type="text" name="name" id="name" required />
-                        </div>
-                            <div class="form-example">
-                                <label for="email">Email: </label>
+                                </div>
+                            </div>
+                            <div class="form__item">
+                                <label for="email" value="Email"> </label>
+                                <div class="form__inner">
                                 <input type="email" name="email" id="email" required />
-                        </div>
-                            <div class="form-example">
+                                </div>
+                            </div>    
+                            <div class="form__item">    
+                                <input class=" filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" >
+                                <label for="filter-pool">I Accept Privacy policy</label>
+                            </div>     
+                         
+                            <div class="form__item">
                                 <input type="submit" value="Subscribe" class="btn submit-btn"/>
                         </div>
+                        
+
                       </form>
-                </div>
+                    </div>
             </form>
         </div>    
         </section>    
     <footer>
         <div class="container">
             <ul class="footer__nav">
-                <li class="footer__nav"></li>
-                <li class="footer__nav"></li>
-                <li class="footer__nav"></li>
+                <li class="footer__nav">Get a consultation</li>
+                <li class="footer__nav">View projects</li>
+                <li class="footer__nav">Contacts</li>
             </ul>
         </div>
         <div class="container">
@@ -92,16 +103,22 @@
                 <img class="header__logo" src="img/logo.svg" alt="logo" width="150">
                 <p>© 2025, Copyright</p>
             </div>
-            <div class="inner-wrapper">
+            <div class="inner-wrapper socials-wrapper">
                 <ul class="socials">
                     <li class="socials__item">
-                        <img class="socials__pic" src="img/facebook.svg"  width="30">
+                        <a href="#">
+                            <img class="socials__pic" src="img/facebook.svg"  width="30">
+                        </a>    
                     </li>
                     <li class="socials__item">
-                        <img class="socials__pic" src="img/instagram.svg" width="30">
+                        <a href="#">
+                            <img class="socials__pic" src="img/instagram.svg" width="30">
+                        </a>    
                     </li>
                     <li class="socials__item">
-                        <img class="socials__pic" src="img/telegram.svg"  width="30">
+                        <a href="#"></a>
+                            <img class="socials__pic" src="img/telegram.svg"  width="30">
+                        </a>    
                     </li>
                     <li class="socials__item">
                         <img class="socials__pic" src="img/youtube.svg"  width="30">
